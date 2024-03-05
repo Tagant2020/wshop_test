@@ -1,0 +1,40 @@
+							API WSHOP
+
+
+L'api developpée permet de créer,modifier,lire et supprimer (CRUD) les magasins enregistrées en base de donnéee. Un fichier contenant la bd et le code source seront ainsi fourni.La table magasins
+ne contient que 3 champs : nom, type et ville.
+
+
+
+ 1- CREATION de magasins
+
+lA création se fait en "POST" via l'url: http://localhost/wshop/crud_method/creer.php en envoyant par exemple comme données :
+
+{"nom":"test","type":"typeTest","ville":"villeTest"}
+
+
+2- la lecture de magasins
+
+	* Récupérer l'ensemble des magasins
+		
+		La lecture se faire en "GET" via l'url : http://localhost/wshop/crud_method/lire.php 
+
+
+	* Récupérer un magasin en particulier
+
+		La lecture se faire en "GET" via l'url : http://localhost/wshop/crud_method/lireUn.php  en envoyant par exemple comme données : {"id":1}
+
+
+
+3- La modification d'un magasion
+
+La modification se fait en "PUT" via l'url : http://localhost/wshop/crud_method/modifier.php en envoyant par exemple comme données : 
+
+{"id":4,"nom":"nomTest","type":"typeTest","ville":"villeTest"}
+
+
+
+
+4- La suppression de magasin
+
+La suppression se fait en "DELETE" via l'url : http://localhost/wshop/crud_method/supprimer.php en envoyant par exemple comme données:  {"id":4}
